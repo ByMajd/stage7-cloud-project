@@ -1,0 +1,28 @@
+# Environment variables
+.env
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+
+# Terraform variables that may contain sensitive values
+terraform.tfvars
+*.auto.tfvars
+
+# SSH keys
+ssh-keys/
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.pyc
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
