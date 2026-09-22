@@ -8,7 +8,7 @@ BRANCH="main"
 
 cd "$APP_DIR"
 
-git pull origin "$BRANCH"
+GIT_SSH_COMMAND="ssh -i /home/azureuser/.ssh/stage7_github -o IdentitiesOnly=yes" git pull origin "$BRANCH"
 
 docker compose pull
 
