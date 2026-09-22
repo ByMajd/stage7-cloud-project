@@ -8,6 +8,7 @@ services:
       - chromadb_data:/chroma/chroma
 
   backend:
+    image: majd0123/stage7-backend:latest
     build:
       context: .
       dockerfile: Dockerfile.backend
@@ -30,6 +31,7 @@ services:
       - ./pdf_store:/app/pdf_store
 
   chatbot:
+    image: YOUR_DOCKERHUB_USERNAME/stage7-chatbot:latest
     build:
       context: .
       dockerfile: Dockerfile.chatbot
